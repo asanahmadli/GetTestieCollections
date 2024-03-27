@@ -40,12 +40,14 @@ public class TestTreeSet {
         treeSet.add("peach");
         Iterator<String> iterator = treeSet.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next());
+           // System.out.println(iterator.next());
+            break;
         }
         SortedSet<String> headset = treeSet.headSet("john");
         Iterator<String> iterator1 = headset.iterator();
         while (iterator1.hasNext()){
-            System.out.println(iterator1.next());
+            //System.out.println(iterator1.next());
+            break;
         }
         Assert.assertEquals("apple", treeSet.first());
     }
@@ -60,12 +62,14 @@ public class TestTreeSet {
         treeSet.add("peach4");
         Iterator<String> iterator = treeSet.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next());
+           // System.out.println(iterator.next());
+            break;
         }
         SortedSet<String> tailSet = treeSet.tailSet("john");
         Iterator<String> iterator1 = tailSet.iterator();
         while (iterator1.hasNext()){
-            System.out.println(iterator1.next());
+            //System.out.println(iterator1.next());
+            break;
         }
         Assert.assertEquals("apple2", treeSet.first());
     }
@@ -82,12 +86,14 @@ public class TestTreeSet {
         treeSet.add("zoo5");
         Iterator<String> iterator = treeSet.iterator();
         while (iterator.hasNext()){
-            System.out.println(iterator.next());
+           // System.out.println(iterator.next());
+            break;
         }
         SortedSet<String> subSet = treeSet.subSet("apple1","peach4");
         Iterator<String> iterator1 = subSet.iterator();
         while (iterator1.hasNext()){
-            System.out.println(iterator1.next());
+            //System.out.println(iterator1.next());
+            break;
         }
         Assert.assertEquals("apple1", treeSet.first());
     }
